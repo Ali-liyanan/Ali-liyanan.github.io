@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="《Agent 开发工程师修炼手册》《总目录与学习指南》在线版">
+<title>卷00 总目录与学习指南 · Agent 开发工程师修炼手册</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-vol">
+<div id="progress"></div>
+<header class="topbar">
+  <a class="brand" href="index.html">Agent 开发工程师修炼手册</a>
+  <nav class="topnav">
+    <a href="index.html">全部卷</a>
+    <a href="search.html">搜索</a>
+    <button id="themeBtn" title="切换主题">◐</button>
+  </nav>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="side-head">
+      <div class="side-badge">卷00</div>
+      <div class="side-title">总目录与学习指南</div>
+    </div>
+    <div class="side-toc"><ul><li class="l1"><a href="#sec-1">前言：这套手册怎么用</a></li><li class="l1"><a href="#sec-2">第一章 全系列知识地图</a></li><li class="l1"><a href="#sec-3">第二章 四阶段学习路线</a></li><li class="l1"><a href="#sec-4">第三章 三条学习建议</a></li></ul></div>
+  </aside>
+  <main class="content">
+    <section class="vol-hero">
+      <div class="hero-inner">
+        <div class="hero-badge">卷00</div>
+        <h1 class="hero-title">总目录与学习指南</h1>
+        <p class="hero-sub">全系列知识地图、学习路线与使用方法</p>
+        <p class="hero-learn"><span>▸ 你将学到：</span>全系列地图、四阶段学习路线与配套学习方法</p>
+        <div class="hero-meta"><span>4 个标题</span><span>2 张图</span><span>1 张表</span><span>0 段代码</span><span>约 3 分钟</span><a class="dl" href="downloads/卷00 总目录与学习指南.docx">下载 Word 版</a></div>
+      </div>
+    </section>
+    <details class="mob-toc"><summary>本卷目录</summary><ul><li class="l1"><a href="#sec-1">前言：这套手册怎么用</a></li><li class="l1"><a href="#sec-2">第一章 全系列知识地图</a></li><li class="l1"><a href="#sec-3">第二章 四阶段学习路线</a></li><li class="l1"><a href="#sec-4">第三章 三条学习建议</a></li></ul></details>
+    <article class="article">
+<h1 id="sec-1">前言：这套手册怎么用</h1><p>这是《Agent 开发工程师修炼手册》的导读卷。全套共十九卷正文（卷01-卷19），外加本卷导读（卷00）与术语附录（卷20），覆盖从模型原理到生产部署的完整知识链路。十九卷并非十九个孤立的专题，而是按“打地基、造器官、成系统、上战场”四个阶段精心排序的学习路径：前一卷是后一卷的地基，后一卷是前一卷的应用。建议按顺序学习，每卷投入三到五小时（含动手练习），约三到四个月可完成全程。</p><p>每卷正文采用统一结构：前言交代本卷定位与学习目标；正文四到六章，按“是什么、为什么、怎么做”展开，配图表、对比表与代码走读；卷末附小结、思考与练习、下一卷预告。各卷之间用“卷N”互相引用，读到哪里缺前置知识就回翻哪卷。目录页码可右键“更新域”刷新。</p><ul><li>零基础入门者：从卷01读起，按序推进，重点做每卷练习；</li><li>有经验后端工程师：可先读卷01、卷07、卷08、卷10快速上手应用开发，再回头补卷02到卷06的模型层原理；</li><li>算法背景读者：卷02到卷06会感到亲切，可快速通过，把时间花在卷10到卷16的工程与治理部分；</li><li>技术管理者：重点读卷01（全景）、卷04（选型）、卷13（架构）、卷15（评估）、卷16（安全与部署），建立决策框架。</li></ul><div class="note"><div class="note-title">◆ 温馨提示</div><p>所有代码示例都可在普通笔记本上运行（调用 API 或使用开源小模型），不需要昂贵硬件。图中标注“示意”的数据仅用于说明量级与趋势，实际数值以官方文档为准。</p></div><h1 id="sec-2">第一章 全系列知识地图</h1><p>全套手册对应 Agent 系统的六层技术栈，下图标注了每层对应的卷次。模型层与推理层（卷02到卷06）回答“模型如何工作、如何跑得快跑得省”；增强层（卷07到卷12）回答“如何给模型装上 Agent 的核心器官”；编排层与交互层（卷13、卷14）回答“如何组织成系统、如何与人及他方 Agent 对话”；运维层（卷15、卷16）回答“如何管好、防好、发好”。</p><figure><img src="assets/v01_stack.png" alt="图0-1 六层技术栈与卷次映射" style="max-width:min(100%,566px)"><figcaption>图0-1 六层技术栈与卷次映射</figcaption></figure><p>十九卷的完整目录如下表所示，包括每卷的主题、回答的核心问题与学成标志。建议打印或收藏这一页，学完一卷勾掉一卷。</p><div class="table-wrap"><table><caption>表0-1 全系列总目录（导读+十九卷正文+附录）</caption><thead><tr><th>卷次</th><th>主题</th><th>回答的核心问题</th></tr></thead><tbody><tr><td>卷01</td><td>认知篇：AI Agent 全景与工程师技能地图</td><td>Agent 是什么、从哪来、由什么组成</td></tr><tr><td>卷02</td><td>大脑篇·上：Transformer 与注意力机制</td><td>模型如何阅读与思考</td></tr><tr><td>卷03</td><td>大脑篇·下：分词、嵌入与向量表示</td><td>文字如何变成数字、中文为什么更贵</td></tr><tr><td>卷04</td><td>选型篇：架构演进、推理模型与选型决策</td><td>用哪个模型、推理模型何时用</td></tr><tr><td>卷05</td><td>引擎篇：推理服务与性能优化</td><td>模型如何跑得又快又便宜</td></tr><tr><td>卷06</td><td>成本篇：模型量化与压缩工程</td><td>如何把模型装进更小的预算</td></tr><tr><td>卷07</td><td>交互篇·上：提示词工程与上下文工程</td><td>如何写给模型的工作说明书</td></tr><tr><td>卷08</td><td>知识篇：RAG 检索增强生成（含 LlamaIndex 框架深度）</td><td>模型不知道的事如何补上</td></tr><tr><td>卷09</td><td>存储篇：向量数据库与检索存储选型</td><td>语义记忆存哪、怎么查得准</td></tr><tr><td>卷10</td><td>行动篇·上：工具调用与 MCP 协议</td><td>模型如何触达真实世界</td></tr><tr><td>卷11</td><td>记忆篇：记忆系统与状态持久化</td><td>Agent 如何记住过去、续上中断</td></tr><tr><td>卷12</td><td>思维篇：规划与复杂推理</td><td>多步任务如何不半途而废</td></tr><tr><td>卷13</td><td>协作篇：多智能体系统与协作框架</td><td>一个 Agent 不够用时怎么办</td></tr><tr><td>卷14</td><td>协议篇：A2A 智能体互联与前端流式交互</td><td>Agent 之间、Agent 与人如何对话</td></tr><tr><td>卷15</td><td>运维篇：可观测性与评估体系</td><td>如何知道它做得好不好</td></tr><tr><td>卷16</td><td>实战篇：安全工程与生产部署</td><td>如何安全送上生产线并持续迭代</td></tr><tr><td>卷17</td><td>多模态篇：多模态 Agent 与视觉语音工程化</td><td>如何让 Agent 看见、听懂、会说</td></tr><tr><td>卷18</td><td>成本篇·补：成本工程与 FinOps 实战</td><td>如何让每分 Token 预算花在刀刃上</td></tr><tr><td>卷19</td><td>实战篇·终：端到端动手项目</td><td>如何把整套手册串成可运行的代码</td></tr><tr><td>卷20</td><td>附录：全书术语速查与工具地图</td><td>记不住的名词到哪里回查</td></tr></tbody></table></div><h1 id="sec-3">第二章 四阶段学习路线</h1><p>第一阶段“打地基”（卷01到卷06）：目标是看懂并跑得动模型。学完你能向同事解释幻觉与上下文限制的成因，能搭建一套高性价比的推理服务，并为后续每一层的设计决策找到底层依据。这一阶段概念密度最高，请容忍暂时的“知其然”，第二阶段会反复回扣。</p><p>第二阶段“造器官”（卷07到卷12）：这是日常开发工作量最集中的阶段。提示词与上下文工程、RAG、向量库、工具与 MCP、记忆、规划——六大器官逐一装入，学完你能独立开发一个自主完成多步任务的 Agent。</p><p>第三阶段“成系统”（卷13到卷15）：从单体走向生态。多智能体协作、A2A 协议与流式前端、可观测性与评估体系，把“能跑的 Demo”升级为“可运营的系统”。</p><p>第四阶段“上战场”（卷16）：安全工程与生产部署，并以一个企业知识客服 Agent 的完整实战收束全系列。学完本阶段，你就具备了把 Agent 系统安全送上生产线并持续迭代的完整能力。</p><figure><img src="assets/v01_radar.png" alt="图0-2 学习各阶段对应的能力成长" style="max-width:min(100%,499px)"><figcaption>图0-2 学习各阶段对应的能力成长</figcaption></figure><p>原十六卷主线之外，卷17-19 在 2026 年的知识版图上补上三条最新延伸：卷17 多模态（让 Agent 接入视觉与语音）、卷18 成本工程（FinOps 与预算治理）、卷19 端到端实战（五个递进项目把全部知识串成代码）。主线学完后，强烈建议按&quot;卷16 → 卷17 → 卷18 → 卷19&quot;的顺序收尾——多模态扩展感知、成本工程控制开销、实战项目验证全链路。至此整套手册构成从&quot;懂原理&quot;到&quot;能上线&quot;的完整闭环。</p><h1 id="sec-4">第三章 三条学习建议</h1><p>建议一：动手优先。Agent 开发是手感活，每卷的思考与练习请在读完正文后 48 小时内完成，把示例代码改出三个变体再跑一遍，理解远比照抄深刻。建议二：建立评估习惯。从卷07 开始，你做的每一次提示词改动都应跑同一组测试用例对比效果；这个习惯将从第一天起把你与“凭感觉调参”的开发者区分开。建议三：以协议为锚。框架会过时，但 MCP、A2A 等协议与注意力、上下文预算等原理是长期资产——学习时间向它们倾斜。</p><p>最后，学习过程中遇到无法解释的现象时，优先回到本目录的图0-1：先判断现象属于哪一层，再回到对应卷次的排障章节。保持全景视角，是 Agent 工程师区别于“调参工人”的第一步。</p>
+    </article>
+    <nav class="pager"><span class="pg disabled"></span><a class="pg next" href="vol01.html"><span>下一卷</span><strong>卷01</strong></a></nav>
+    <footer class="foot">
+      <p>《Agent 开发工程师修炼手册》 · 卷00 · <a href="index.html">返回总目录</a> · <a href="search.html">全文搜索</a></p>
+      <p class="muted">静态站点由内容源码生成；如需 Word 版请使用本页顶部「下载 Word 版」。</p>
+    </footer>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
